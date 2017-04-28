@@ -9,7 +9,7 @@ use Drupal\Core\Controller\ControllerBase;
 class WebgmStartController {
 	public function startAction() {
 		return [
-			'#markup' => '<h2>Welcome to the start page</h2>',
+			'#markup' => '<h2>Lots of great features for you to get excited about.</h2>',
 		];
 	}
 }
