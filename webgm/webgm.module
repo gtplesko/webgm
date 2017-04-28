@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * webgm.module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function webgm_menu() {
+  $items = array();
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function webgm_form_alter() {
+
+}
