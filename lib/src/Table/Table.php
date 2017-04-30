@@ -44,6 +44,16 @@ class Table
    */
   public $entries;
 
+  /**
+   * @OneToMany (targetEntity="WebGM\Table\Table", mappedBy="parent")
+   */
+  public $children;
+
+  /**
+   * @ManyToOne ((targetEntity="WebGM\Table\Table", inversedBy="children")
+   */
+  public $parent;
+
   public function __construct() {
     $this->entries = new ArrayCollection();
   }
