@@ -1,0 +1,10 @@
+<phpunit
+  bootstrap="../vendor/autoload.php"
+  >
+  <testsuites>
+    <testsuite name="Table Tests">
+      <directory suffix=".php">Table/</directory>
+      <file>Table/TableTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
