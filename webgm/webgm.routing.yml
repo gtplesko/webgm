@@ -1,6 +1,0 @@
-webgm.start:
-    path: /custom/start
-    defaults:
-        _controller: '\Drupal\webgm\Controller\WebgmStartController::startAction'
-    requirements:
-        _permission: 'access content'
