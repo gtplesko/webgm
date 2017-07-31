@@ -46,6 +46,7 @@ A [child] [pulls a [sword] from a [stone]] which [makes them a [king]] they then
 Imagine the possibility where each set of brackets could be replaced with a word or phrase with a similar subject. The same phrase above could generate
 
 A [beggar] [is attacked by a [mystical moose]] which [turns them into a [dragon]] they then [build a [castle] of [water]] to [reincarnate a [god]]
+
 ------
 
 ## 2. How to get involved
