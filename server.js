@@ -5,19 +5,17 @@ var app = express();
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 8000;
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+if (process.env.NODE_ENV === 'production') {
+  // statically serve client build
+  app.use(express.static(__dirname + '/client/build'));
+}
 
-// make express look in the public directory for assets (css/js/img)
-app.use(express.static(__dirname + '/public'));
-
-// set the home page route
-app.get('/', function(req, res) {
-
-    // ejs render automatically looks in the views folder
-    res.render('index');
+// test endpoint to confirm that requests are
+// proxied from the development server
+app.get('/api/hello', (req, res) => {
+  res.send({ api: 'works' });
 });
 
 app.listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
+  console.log('Our app is running on http://localhost:' + port);
 });

@@ -4,7 +4,10 @@
   "description": "Webgm =====",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "concurrently \"PORT=8001 npm run server\" \"PORT=8000 npm run client-dev\"",
+    "server": "node server.js",
+    "build": "cd client && npm run build",
+    "client-dev": "cd client && npm run start"
   },
   "dependencies": {
     "ejs": "~1.0.0",
