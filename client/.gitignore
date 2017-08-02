@@ -7,7 +7,11 @@
 /coverage
 
 # production
-/build
+
+# This is commented out because we want to check build into VC, since we don't
+# have any "build on deploy" flow set up yet. If we set that up, we should
+# remove /build from VC.
+# /build
 
 # misc
 .DS_Store
